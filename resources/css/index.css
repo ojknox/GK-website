@@ -20,44 +20,48 @@ h1 {
   text-align: center;
   letter-spacing: 4px;
   font-size: 4rem;
-  font-family: "Gayathri", sans-serif;
+  font-family: 'Crimson Text', serif;
 }
 
 h2 {
-  font-family: "Gayathri", sans-serif;
+  font-family: "Crimson Text", sans-serif;
   font-size: 2rem;
+}
+
+h3 {
+  font-family: "Crimson Text", sans-serif;
+  font-size: 1.5rem;
 }
 
 /*
 NAVBAR
 */
 
-nav {
-  display: flex;
-  position: fixed;
+header {
   top: 0;
-  width: 100%;
-  background-color: white;
-  height: auto;
-  justify-content: space-between;
+  height: 50px;
+  padding: 20px;
+}
+
+header .desktop {
+  display: flex;
   align-items: center;
-  padding: 20px 0;
+  justify-content: space-between;
+  height: 100%;
 }
 
 .links {
-  display: inline-block;
-  text-align: center;
-  padding: 20px;
+  padding: 0 20px;
   font-family: "Crimson Text", serif;
   font-size: 1.25rem;
 }
 
-a.fab.fa-instagram.fa-lg{
-  padding-right: 20px;
-}
-
 header h2 {
   margin: 0;
+}
+
+header .mobile {
+  display: none;
 }
 
 /*
@@ -65,13 +69,12 @@ WELCOME SECTION
 */
 
 .welcome {
-  padding: 250px 0 140px 0;
-  margin: 0 auto;
   background-color: #f4ddd0;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap-reverse;
+  flex-wrap: wrap;
+  padding: 20px;
 }
 
 /*
@@ -81,12 +84,16 @@ WELCOME SECTION
 */
 
 .message {
-  max-width: 600px;
-  margin: 50px;
+  width: 600px;
+  padding-right: 20px;
+}
+
+.message h1 {
+  margin: 20px 0;
 }
 
 .welcimg {
-  max-width: 400px;
+  width: 350px;
   flex-shrink: 2;
 }
 
@@ -99,7 +106,7 @@ ABOUT ME SECTION
 */
 
 .about {
-  padding: 100px 0;
+  padding: 20px 0;
 }
 
 .about h2 {
@@ -110,10 +117,11 @@ ABOUT ME SECTION
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0 20px;
 }
 
 .mephoto {
-  max-width: 700px;
+  width: 50%;
 }
 
 .mephoto img {
@@ -121,7 +129,7 @@ ABOUT ME SECTION
 }
 
 .metext {
-  max-width: 700px;
+  width: 50%;
   padding-left: 20px;
   text-align: justify;
 }
@@ -135,7 +143,7 @@ QUOTE BANNER
   width: 100%;
   background-size: cover;
   background-position: center center;
-  padding: 150px 0px;
+  padding: 50px 0px;
   text-align: center;
 }
 

@@ -9,14 +9,10 @@
     <script src="https://kit.fontawesome.com/bf6e039a0a.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&family=Work+Sans:wght@400;500;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Gayathri:wght@100&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-   
     <!--Header-->
     <header>
         <div class="desktop">
@@ -32,7 +28,6 @@
             </div>
         </div>
         <div class="mobile">
-
         </div>
     </header>
     
@@ -84,27 +79,38 @@
 
     <!-- Work with me -->
     <div class="work">
-        <h2>If you would like to work with me, please fill in the form below:</h2>
-        <form action="./resources/" method="post">
-            <ul>
-             <li>
-               <label for="name">Name:</label>
-               <input type="text" id="name" name="user_name">
-             </li>
-             <li>
-               <label for="mail">E-mail:</label>
-               <input type="email" id="mail" name="user_email">
-             </li>
-             <li>
-               <label for="msg">Message:</label>
-               <textarea id="msg" name="user_message"></textarea>
-             </li>
-             <li class="button">
-                <button type="submit">Send your message</button>
-              </li>
-            </ul>
-           </form>
+        <h2>Contact Me</h2>
+        <p>If you would like to work with me to help you achieve your goals, I would be more than happy to help!</p>
+        <form class="contact-form">
+            <input type="name" placeholder='Full Name'>
+            <input type="email" placeholder="Email Address">
+            <input type="phone" placeholder='Phone Number'>
+            <textarea placeholder="A bit about yourself..."></textarea>
+            <button type="submit" class='button button-primary'>Send Request </button>
+        </form>
     </div>
+
+    <!--
+        <form class="...">
+            <input type="name" placeholder='Full Name'>
+            <input type="email" placeholder="Email Address">
+            <input type="phone" placeholder='Phone Number'>
+            <input type="text" placeholder='Requested Date'>
+            <textarea placeholder="something"></textarea>
+            <button type="submit" class='button button-primary'>Send Request </button>
+        </form>
+
+        <footer>&mdash; Sandy Cohen</footer> - to get the dash for a referral
+
+        font-family: 'Playfair Display', Georgia, serif - for headings and p
+        a = "open Sans", Helvetica, sans-serif
+
+        from colour theory project - Journey around the world - can look at for a form
+
+        change font colour to dark grey e.g. #333333 or #9B9B9B
+
+        add cursor: pointer for a links
+    -->
 
     
 </body>

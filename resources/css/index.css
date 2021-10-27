@@ -5,18 +5,14 @@ body {
   margin: 0;
 }
 p {
-  font-family: "Playfair Display", Georgia, serif;
+  font-family: "Quicksand", Georgia, serif;
   font-size: 1.5rem;
   color: #333333;
 }
-li {
-  font-family: "Open Sans", Helvetica, sans-serif;
-  color: #333333
-} 
 a {
   text-decoration: none;
-  color: #333333;
-  font-family: "Open Sans", Helvetica, sans-serif;
+  color: white;
+  font-family: "Quicksand", Helvetica, sans-serif;
 }
 .right a:hover{
   text-decoration: underline;
@@ -48,6 +44,7 @@ header {
   top: 0;
   height: 50px;
   padding: 20px;
+  background-color: #9FC7AA;
 }
 header .desktop {
   display: flex;
@@ -56,7 +53,7 @@ header .desktop {
   height: 100%;
 }
 .links {
-  padding: 0 20px;
+  padding-right: 30px;
 }
 .links h2 {
   font-size: 2rem;
@@ -67,38 +64,32 @@ header h2 {
 header .mobile {
   display: none;
 }
+.left, .left img {
+  height: 100%;
+}
+.left img {
+  width: 55px;
+}
 
 /*
 WELCOME SECTION
 */
 
 .welcome {
-  background-color: #f4ddd0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  padding: 20px;
+  background-color: #9FC7AA;
+  text-align: center;
+  padding: 100px 20px 200px 20px;
 }
-
 /*
 #ffc1b9
 #f8dbd7
 #e1cec3
 */
-
-.message {
-  width: 600px;
-  padding-right: 20px;
+.welcome img {
+  padding: 150px;
+  width: 500px;
+  border-bottom: 1px solid white;
 }
-.message h1 {
-  margin: 20px 0;
-}
-.welcimg {
-  width: 350px;
-  flex-shrink: 2;
-}
-
 /*
 ABOUT ME SECTION
 */
@@ -178,7 +169,7 @@ button {
   font-weight: 700;
   padding: 15px 30px;
   text-align: center;
-  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-family: 'Quicksand', Helvetica, sans-serif;
   transition: opacity 0.5s ease;
   float: left;
 }

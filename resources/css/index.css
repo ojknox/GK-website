@@ -80,54 +80,60 @@ WELCOME SECTION
   text-align: center;
   padding: 100px 20px 200px 20px;
 }
-/*
-#ffc1b9
-#f8dbd7
-#e1cec3
-*/
+
 .welcome img {
   padding: 150px;
   width: 500px;
   border-bottom: 1px solid white;
 }
-/*
-ABOUT ME SECTION
-*/
 
-.about {
-  padding: 20px 20px 40px 20px;
+/*
+Intro section
+*/
+.intro h2 {
   text-align: center;
+  margin: 50px;
 }
-.aboutcontainer {
+.intro p {
+  font-family: "Playfair Display", Georgia, serif;
+}
+.intro {
+  padding: 30px;
+}
+.introsection {
   display: flex;
   justify-content: center;
 }
-.content {
-  width: 33%;
-  margin: 10px;
-  background-color: hsl(0, 0%, 95%);
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+.text {
+  max-width: 360px;
+  padding-right: 100px;
+}
+.container {
+  width: 300px;
+  padding-left: 100px;
 }
 
 /*
-QUOTE BANNER
+ABOUT ME SECTION
 */
+.about {
+  background-color: #9FC7AA;
+  padding: 60px 40px;
+  display: flex;
+  justify-content: center;
+}
+.about h2, .about p {
+  color:white;
+}
+.aboutinfo {
+  max-width: 500px;
+  padding: 0px 40px;
+}
+.abouttext {
+  padding: 0 60px 100px 0;
+  border-right: 3px solid white;
+}
 
-.quote {
-  background-image: url("../images/quotepic2.jpg");
-  width: 100%;
-  background-size: cover;
-  background-position: center center;
-  padding: 50px 0px;
-  text-align: center;
-}
-.quote h3 {
-  color: white;
-  font-size: 1.75rem;
-}
 
 /*
 WORK WITH ME
@@ -163,15 +169,15 @@ textarea {
 }
 button {
   border: 1px solid white;
-  color: white;
-  background-color: transparent;
+  color: #9FC7AA;
+  background-color: white;
   font-size: 1rem;
-  font-weight: 700;
   padding: 15px 30px;
   text-align: center;
   font-family: 'Quicksand', Helvetica, sans-serif;
   transition: opacity 0.5s ease;
   float: left;
+  margin-top: 20px;
 }
 button:hover {
   cursor: pointer;

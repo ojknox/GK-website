@@ -83,7 +83,6 @@ WELCOME SECTION
 }
 
 .welcome img {
-  padding: 150px;
   width: 500px;
   border-bottom: 1px solid white;
 }
@@ -144,12 +143,13 @@ COACHING PROGRAMMES
 }
 .programmes {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   padding: 40px 20px;
 }
 .photo-box {
   width: 180px;
   text-align: center;
+  padding: 40px;
 }
 .photo-box img {
   border-radius: 50%;
@@ -161,9 +161,36 @@ COACHING PROGRAMMES
   opacity: 70%;
 }
 .splitline {
-  width: 20%;
-  border: 3px solid #9FC7AA;
+  width: 26%;
+  border: 1px solid #9FC7AA;
   margin: 0 auto;
+}
+
+/*
+WHAT IS A HEALTH COACH
+*/
+.explain {
+  padding-bottom: 20px
+}
+
+.explain h2 {
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+  width: 70%;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+.explain-container {
+  display:flex;
+  margin: 40px 0;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-bottom: 30px;
+}
+
+.explain-box {
+  width: 200px
 }
 
 
@@ -215,3 +242,5 @@ button:hover {
   cursor: pointer;
   opacity: 70%;
 }
+
+

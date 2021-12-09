@@ -193,18 +193,27 @@ WHAT IS A HEALTH COACH
   width: 200px
 }
 
+.explain .splitline {
+  border: 1px solid white;
+  margin-top: -40px;
+}
+
+.background {
+  background-color: #9FC7AA;
+  height: 200px;
+  margin-top: -150px;
+}
 
 /*
-WORK WITH ME
+CONTACT ME
 */
 
-.work {
+.contact {
   padding: 40px;
-  background-color: #A88E7E;
   text-align: center;
 }
-.work h2, .work p{
-  color: white;
+.contact h2, .contact p{
+  color: black;
 }
 form {
   margin: 0 auto;
@@ -222,14 +231,15 @@ input, textarea {
 input {
   width: 100%;
   display: block;
+  color: white;
 }
 textarea {
   width: 100%;
 }
 button {
   border: 1px solid white;
-  color: #9FC7AA;
-  background-color: white;
+  color: white;
+  background-color: #9FC7AA;
   font-size: 1rem;
   padding: 15px 30px;
   text-align: center;

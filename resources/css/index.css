@@ -11,6 +11,7 @@
 
 html {
   font-size: 16px;
+  scroll-padding-top: 90px;
 }
 body {
   margin: 0;
@@ -36,7 +37,7 @@ h1 {
   font-size: 4.5rem;
 }
 h2 {
-  font-size: 3rem;
+  font-size: 2rem;
   text-align: center;
   margin: 15px 0;
 }
@@ -97,7 +98,7 @@ WELCOME SECTION
 }
 
 .welcome img {
-  width: 500px;
+  max-width: 500px;
   border-bottom: 1px solid white;
 }
 
@@ -105,7 +106,7 @@ WELCOME SECTION
 Intro section
 */
 .intro {
-  padding: 15px;
+  padding: 30px;
   display:flex;
   flex-direction: column;
   align-items: center;
@@ -126,6 +127,7 @@ Intro section
 .container {
   width: 240px;
   padding-left:100px;
+  flex-shrink: 0.3;
 }
 
 /*
@@ -139,6 +141,7 @@ ABOUT ME SECTION
 }
 .picture {
   max-width: 325px;
+  flex-shrink: 0.6;
 }
 .about h2, .about p {
   color:white;
@@ -162,13 +165,13 @@ ABOUT ME SECTION
 COACHING PROGRAMMES
 */
 .coaching {
-  padding-top: 20px;
-  padding-bottom: 50px;
+  padding: 40px 0;
 }
 .programmes {
   display: flex;
   justify-content: center;
   padding: 0 20px;
+  flex-wrap: wrap;
 }
 .photo-box {
   width: 180px;
@@ -198,8 +201,8 @@ WHAT IS A HEALTH COACH
 }
 
 .explain h2 {
-  border-top: 3px solid black;
-  border-bottom: 3px solid black;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
   margin: 0 auto;
   padding: 15px;
 }
@@ -209,12 +212,16 @@ WHAT IS A HEALTH COACH
   margin: 40px 0;
   justify-content: center;
   flex-wrap: wrap;
-  padding-bottom: 30px;
 }
 
 .explain-box {
   width: 200px;
   padding: 10px;
+}
+
+.explain-box:hover {
+  cursor: pointer;
+  opacity: 90%;
 }
 
 .explain .splitline {
@@ -253,20 +260,19 @@ input, textarea {
 }
 input {
   display: inline-block;
-  color: white;
+  color: var(--main-text-colour);
 }
-.input.name {
-  width: 20%;
+input.name {
+  min-width: 200px;
 }
-.input.email {
-  width: 30%;
+input.email {
+  min-width: 300px;
 }
-.input.phone {
-  width: 20%;
-}
+
 textarea {
-  width: 70%;
+  min-width: 500px;
   margin: 0 auto;
+  color: var(--main-text-colour);
 }
 button {
   border: 1px solid var(--main-bg-colour);
@@ -285,4 +291,63 @@ button:hover {
   opacity: 70%;
 }
 
+@media only screen and (max-width: 768px){
+  p {
+    font-size: 1rem;
+  }
 
+  h2 {
+    font-size: 1.5rem;
+  }
+  
+  .intro {
+    padding: 20px;
+  }
+
+  .container {
+    padding-left: 50px;
+  }
+
+  .about {
+    padding: 30px 20px;
+  }
+
+  .abouttext {
+    padding: 0 20px 0 0 ;
+  }
+
+  .explain-container {
+    margin: 40px auto;
+    max-width: 600px;
+  }
+
+  textarea {
+    min-width: 0;
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .abouttext {
+    padding: 0;
+    border: none;
+  }
+
+  button {
+    padding: 5px 10px;
+  }
+
+  .aboutinfo {
+    padding: 0px 10px;
+  }
+
+  input.name {
+    min-width: 0;
+    width: 50%;
+  }
+
+  input.email {
+    min-width: 0;
+    width: 80%;
+  };
+}

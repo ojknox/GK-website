@@ -317,6 +317,7 @@ textarea {
   min-width: 500px;
   margin: 0 auto;
   color: var(--main-text-colour);
+  display: block;
 }
 button {
   border: 1px solid var(--main-bg-colour);
